@@ -7,17 +7,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="src/dheep-logo.jpg" type="image/jpg" />
+  <link rel="icon" href="src/ritsu-logo.jpg" type="image/jpg" />
   <title>Ritsu</title>
 </head>
 
 <body class="dark:bg-[#0a0e17] bg-[#EAEAEA]">
   <section title="navbar" id="navbar" class="transition-all duration-1000">
-    <nav class="bg-white border-gray-200 dark:bg-gray-900">
+    <nav class=" border-gray-200 fixed top-0 w-screen z-10 transition-all duration-700 ">
       <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
-          <!-- <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Flowbite Logo" /> -->
-          <span class="self-center text-2xl font-bold whitespace-nowrap dark:text-white">RITSU</span>
+          <!-- <img src="src/ritsu-logo.jpg" class="h-10 rounded-full alt="Ritsu Logo" /> -->
+          <span class="self-center text-2xl font-bold whitespace-nowrap text-white dark:text-white brand">RITSU</span>
         </a>
         <button data-collapse-toggle="navbar-default" type="button"
           class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
@@ -30,27 +30,27 @@
         </button>
         <div class="hidden w-full md:block md:w-auto" id="navbar-default">
           <ul
-            class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+            class="font-medium flex items-center justify-center flex-col p-4 md:p-0 mt-4 border border-gray-3 mt-200 rounded-lg  md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 bg-transparent dark:border-gray-700">
             <li>
-              <a href="#"
+              <a onclick="scrollToSection('#hero')"
                 class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
-                aria-current="page">Home</a>
+                aria-current="page">Beranda</a>
             </li>
             <li>
-              <a href="#"
-                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About</a>
+              <a onclick="scrollToSection('product')"
+                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Produk</a>
             </li>
             <li>
-              <a href="#"
-                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Services</a>
+              <a onclick="scrollToSection('review')"
+                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Rating</a>
             </li>
             <li>
-              <a href="#"
-                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Pricing</a>
+              <a onclick="scrollToSection('galery')"
+                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Galeri</a>
             </li>
             <li>
-              <a href="#"
-                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
+              <a onclick="scrollToSection('maps')"
+                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Alamat</a>
             </li>
           </ul>
         </div>
@@ -59,23 +59,23 @@
   </section>
   <section id="hero" title="hero" class="transition-all duration-1000">
     <section
-      class="bg-center bg-no-repeat bg-[url(src/bg-hero.jpg)] bg-cover w-100 overflow-hidden h-[100vh] flex flex-col justify-center items-center bg-gray-600 bg-blend-multiply">
+      class="bg-left bg-no-repeat bg-[url(src/bg-hero.jpg)] bg-cover w-100 overflow-hidden h-[100vh] flex flex-col justify-center items-center bg-gray-900 bg-blend-soft-light">
       <p class="absolute bottom-[10%] left-[50%] z-0 opacity-[10%]">
         Image by
         <a
           href="https://www.freepik.com/free-vector/flat-design-abstract-illustration_22900052.htm#query=abstract%20background&position=42&from_view=search&track=ais&uuid=7275c7f6-cb55-46db-baa3-6fa6c833beec">Freepik</a>
       </p>
-      <div class="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56">
+      <div class="px-4 mx-auto max-w-screen-xl text-center lg:py-56">
         <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">
-          Temukan Gaya Unik Anda dengan Ritsu.id
+          Temukan Gaya Anda dengan Desain Grafis dari Ritsu
         </h1>
         <p class="mb-8 text-sm md:text-xl md:text-3xl font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">
-          Penuhi kebutuhan fashion Anda dengan koleksi eksklusif kami. Desain
-          baju kustom Anda sendiri dan nikmati pengalaman berbelanja online
-          yang tak tertandingi.
+          Jelajahi koleksi eksklusif kami dan personalisasi gaya Anda dengan custom desain baju. 
+          Dari desain grafis baju yang trendi hingga kemampuan untuk menciptakan pakaian unik sesuai selera
         </p>
+        
         <div class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0">
-          <a href="https://wa.me/6285894800204?text=Halo%20saya%20ingin%20membuat%20website%20untuk%20toko%20saya"
+          <a href="https://wa.me/6285718251092"
             target="_blank" rel="noopener noreferrer"
             class="inline-flex justify-center items-center py-3 px-5 text-sm md:text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
             Hubungi Kami
@@ -85,7 +85,7 @@
                 d="M1 5h12m0 0L9 1m4 4L9 9" />
             </svg>
           </a>
-          <a onclick="scrollToSection('benefit')"
+          <a onclick="scrollToSection('product')"
             class="inline-flex justify-center hover:text-gray-900 items-center py-3 px-5 text-sm sm:ms-4 md:text-base font-medium text-center text-white rounded-lg border border-white hover:bg-gray-3 mt-200 focus:ring-4 focus:ring-gray-400">
             Pelajari Selengkapnya
           </a>
@@ -93,9 +93,10 @@
       </div>
     </section>
   </section>
-  <section class="sections duration-1000 transition-all mt-26">
+
+  <!-- <section class="sections duration-1000 transition-all my-24">
     <div class="container mx-auto">
-      <a href="#" class="block w-[60%] p-16 mx-auto">
+      <a href="#" class="block w-full md:w-[60%] p-6 md:p-16 mx-auto">
         <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
           RITSU
         </h5>
@@ -107,63 +108,317 @@
         </p>
       </a>
     </div>
-  </section>
-  <section>
-    <div class="container mx-auto">
-      <h5 class="mb-2 text-2xl font-bold tracking-tight p-4 rounded-lg text-center bg-gray-900 dark:text-white">
-        GALERY
-      </h5>
-      <div class="wrapper w-full grid grid-cols-3 ">
-        <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-          <a href="#">
-            <img class="rounded-t-lg w-full" src="https://placehold.co/300" alt="" />
-          </a>
-          <div class="p-5">
-            <a href="#">
-              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology
-                acquisitions 2021</h5>
-            </a>
-          </div>
-        </div>
-        <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-          <a href="#">
-            <img class="rounded-t-lg w-full" src="https://placehold.co/300" alt="" />
-          </a>
-          <div class="p-5">
-            <a href="#">
-              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology
-                acquisitions 2021</h5>
-            </a>
-          </div>
-        </div>
-        <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-          <a href="#">
-            <img class="rounded-t-lg w-full" src="https://placehold.co/300" alt="" />
-          </a>
-          <div class="p-5">
-            <a href="#">
-              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology
-                acquisitions 2021</h5>
-            </a>
-          </div>
-        </div>
+  </section> -->
 
+  <section class="my-24" id="product">
+    <div class="container mx-auto">
+      <h5 class="mb-6 text-2xl font-bold tracking-tight text-gray-900 dark:text-white text-center">
+        PRODUK KAMI
+      </h5>
+      <div class="wrapper w-max mx-auto grid gap-4 grid-cols-1 md:grid-cols-2">
+        <div
+          class="max-w-xs p-6 bg-white border border-gray-400 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 opacity-0 transition-all duration-1000 sections">
+          <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 18">
+            <path d="M12.687 14.408a3.01 3.01 0 0 1-1.533.821l-3.566.713a3 3 0 0 1-3.53-3.53l.713-3.566a3.01 3.01 0 0 1 .821-1.533L10.905 2H2.167A2.169 2.169 0 0 0 0 4.167v11.666A2.169 2.169 0 0 0 2.167 18h11.666A2.169 2.169 0 0 0 16 15.833V11.1l-3.313 3.308Zm5.53-9.065.546-.546a2.518 2.518 0 0 0 0-3.56 2.576 2.576 0 0 0-3.559 0l-.547.547 3.56 3.56Z"/>
+            <path d="M13.243 3.2 7.359 9.081a.5.5 0 0 0-.136.256L6.51 12.9a.5.5 0 0 0 .59.59l3.566-.713a.5.5 0 0 0 .255-.136L16.8 6.757 13.243 3.2Z"/>
+          </svg>
+          <a href="#">
+            <h5 class="mb-2 text-xl md:text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">
+              Desain Graphic Baju
+            </h5>
+          </a>
+          <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">
+            Temukan kreasi paling baru dan eksklusif dalam desain grafis baju kami. Dari gaya yang trendi hingga konsep yang unik
+          </p>
+          
+        </div>
+        <div
+          class="max-w-xs p-6 bg-white border border-gray-400 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 opacity-0 transition-all duration-1000 sections">
+          <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7.75 4H19M7.75 4a2.25 2.25 0 0 1-4.5 0m4.5 0a2.25 2.25 0 0 0-4.5 0M1 4h2.25m13.5 6H19m-2.25 0a2.25 2.25 0 0 1-4.5 0m4.5 0a2.25 2.25 0 0 0-4.5 0M1 10h11.25m-4.5 6H19M7.75 16a2.25 2.25 0 0 1-4.5 0m4.5 0a2.25 2.25 0 0 0-4.5 0M1 16h2.25"/>
+          </svg>
+          <a href="#">
+            <h5 class="mb-2 text-xl md:text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">
+              Custom Desain
+            </h5>
+          </a>
+          <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">
+            Temukan pengalaman personalisasi tak terbatas dengan layanan custom desain kami. Ciptakan pakaian yang unik sesuai dengan gaya dan selera Anda.
+          </p>
+          
+          
+        </div>
       </div>
     </div>
   </section>
-  <footer class="bg-white rounded-lg bottom-0 shadow mt-24 dark:bg-gray-900 relative bottom-0">
-    <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
-      <hr class="my-6 border-gray-400 sm:mx-auto dark:border-gray-700 lg:my-8" />
-      <span class="block text-sm text-gray-500 text-center dark:text-gray-400">© 2024
-        <a href="https://dheep.site/" class="hover:underline">dheep.site</a>.
-        All Rights Reserved.</span>
+  <section class="my-24 bg-gray-300 dark:bg-gray-800 py-16" id="review">
+    <div class="container mx-auto">
+      <div class="ratings">
+        <h5 class="mb-2 text-xl md:text-2xl font-semibold tracking-tight text-gray-900 text-center dark:text-white">
+          RATING
+        </h5>
+        <div class="wrapper px-4 grid grid-cols-1 gap-4  lg:grid-cols-3 w-full mt-12">
+          <article class="bg-gray-200 dark:bg-gray-900 p-4 rounded shadow ">
+            <div class="flex  items-center mb-4">
+              <img class="w-10 h-10 me-4 rounded-full" src="https://i.pinimg.com/originals/d2/98/4e/d2984ec4b65a8568eab3dc2b640fc58e.jpg" alt="">
+              <div class="font-medium dark:text-white">
+                <p>Dika</p>
+              </div>
+            </div>
+            <div class="flex items-center mb-1 space-x-1 rtl:space-x-reverse">
+              <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor" viewBox="0 0 22 20">
+                <path
+                  d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+              </svg>
+              <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor" viewBox="0 0 22 20">
+                <path
+                  d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+              </svg>
+              <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor" viewBox="0 0 22 20">
+                <path
+                  d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+              </svg>
+              <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor" viewBox="0 0 22 20">
+                <path
+                  d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+              </svg>
+              <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor" viewBox="0 0 22 20">
+                <path
+                  d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+              </svg>
+              
+              
+            </div>
+            <footer class="mb-5 text-sm text-gray-500 dark:text-gray-400">
+              <p><time datetime="2017-03-03 19:00">Maret 3, 2023</time></p>
+            </footer>
+            <p class="mb-2 text-gray-500 dark:text-gray-400">Gokil, bro! Baru aja beli baju desain dari sini, keren abis! Pelayanan juga ramah, kayaknya bukan cuma jualan, tapi kayak temen sendiri. Bener-bener worth it belanja di Ritsu.id, bakal sering balik lagi nih.</p>            
+          </article>
+          <article class="bg-gray-200 dark:bg-gray-900 p-4 rounded shadow">
+            <div class="flex  items-center mb-4">
+              <img class="w-10 h-10 me-4 rounded-full" src="https://i.pinimg.com/originals/d2/98/4e/d2984ec4b65a8568eab3dc2b640fc58e.jpg" alt="">
+              <div class="font-medium dark:text-white">
+                <p>Yukii</p>
+              </div>
+            </div>
+            <div class="flex items-center mb-1 space-x-1 rtl:space-x-reverse">
+              <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor" viewBox="0 0 22 20">
+                <path
+                  d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+              </svg>
+              <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor" viewBox="0 0 22 20">
+                <path
+                  d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+              </svg>
+              <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor" viewBox="0 0 22 20">
+                <path
+                  d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+              </svg>
+              <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor" viewBox="0 0 22 20">
+                <path
+                  d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+              </svg>
+              <svg class="w-4 h-4 text-gray-300 dark:text-gray-500" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                <path
+                  d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+              </svg>
+              
+            </div>
+            <footer class="mb-5 text-sm text-gray-500 dark:text-gray-400">
+              <p><time datetime="2017-03-03 19:00">Oktober 12, 2023</time></p>
+            </footer>
+            <p class="mb-2 text-gray-500 dark:text-gray-400">Nih ya, desain bajunya bukan main kece. Gue pesen custom design, dan hasilnya bikin makin PD! Abis itu, proses pesenannya juga cepet, gak pake ribet. Tempat langganan baru buat belanja baju, rekomen banget!</p>            
+          </article>
+          <article class="bg-gray-200 dark:bg-gray-900 p-4 rounded shadow">
+            <div class="flex  items-center mb-4">
+              <img class="w-10 h-10 me-4 rounded-full" src="https://i.pinimg.com/originals/d2/98/4e/d2984ec4b65a8568eab3dc2b640fc58e.jpg  " alt="">
+              <div class="font-medium dark:text-white">
+                <p>Rian</p>
+              </div>
+            </div>
+            <div class="flex items-center mb-1 space-x-1 rtl:space-x-reverse">
+              <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor" viewBox="0 0 22 20">
+                <path
+                  d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+              </svg>
+              <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor" viewBox="0 0 22 20">
+                <path
+                  d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+              </svg>
+              <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor" viewBox="0 0 22 20">
+                <path
+                  d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+              </svg>
+              <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor" viewBox="0 0 22 20">
+                <path
+                  d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+              </svg>
+              <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor" viewBox="0 0 22 20">
+                <path
+                  d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+              </svg>
+              
+              
+            </div>
+            <footer class="mb-5 text-sm text-gray-500 dark:text-gray-400">
+              <p><time datetime="2017-03-03 19:00">Desember 27, 2023</time></p>
+            </footer>
+            <p class="mb-2 text-gray-500 dark:text-gray-400">Mau kasih apresiasi buat Ritsu.id, deh! Desain bajunya oke-oke, kualitasnya juga gak nanggung. Udah gitu, pelayanannya asik dan responsif. Bener-bener enjoy banget belanja di sini. Bakal rekomen ke temen-temen!</p>            
+          </article>
+
+        </div>
+        <div class="flex gap-2 w-full mt-8 items-center justify-center mx-auto">
+          <a href="https://search.google.com/local/writereview?placeid=ChIJIUj21XGTaS4RViLsKG_vjoQ" class="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">Tulis Review</a>
+          <a href="https://maps.app.goo.gl/xXbqdakjRkHDRLsx5" class="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">Lihat Semua</a>
+        </div>
+      </div>
     </div>
-  </footer>
+  </section>
+  <section>
+    <div class="container mx-auto " id="galery">
+      <div class="galery w-[90%]  mx-auto flex flex-col gap-4">
+        <div class="title">
+          <h5 class="mb-2 text-2xl font-bold tracking-tight bg-gray-300 dark:bg-gray-800 p-4 rounded-t-lg dark:text-white">
+            GALERI
+          </h5>
+        </div>
+        <div class="images w-full">
+          <div
+            class="wrapper grid justify-items-stretch grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 rounded-lg gap-1 p-2 content-left self-center ">
+            <div class=" bg-white border border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700" style="aspect-ratio:1/1 ;overflow:hidden;">
+              <a href="#">
+                <img loading="lazy" class=" w-full" src="src/1.jpg" alt="" />
+              </a>
+            </div>
+            <div class=" bg-white border border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700" style="aspect-ratio:1/1 ;overflow:hidden;">
+              <a href="#">
+                <img loading="lazy" class=" w-full" src="src/2.jpeg" alt="" />
+              </a>
+            </div>
+            <div class=" bg-white border border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700" style="aspect-ratio:1/1 ;overflow:hidden;">
+              <a href="#">
+                <img loading="lazy" class=" w-full" src="src/3.jpeg" alt="" />
+              </a>
+            </div>
+            <div class=" bg-white border border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700" style="aspect-ratio:1/1 ;overflow:hidden;">
+              <a href="#">
+                <img loading="lazy" class=" w-full" src="src/4.jpeg" alt="" />
+              </a>
+            </div>
+            <div class=" bg-white border border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700" style="aspect-ratio:1/1 ;overflow:hidden;">
+              <a href="#">
+                <img loading="lazy" class=" w-full" src="src/5.jpeg" alt="" />
+              </a>
+            </div>
+            <div class=" bg-white border border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700" style="aspect-ratio:1/1 ;overflow:hidden;">
+              <a href="#">
+                <img loading="lazy" class=" w-full" src="src/6.jpeg" alt="" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="my-16" id="maps">
+    <div class="container mx-auto">
+      <div class="findus w-[90%] mx-auto">
+        <h5 class="mb-2 text-2xl font-bold tracking-tight bg-gray-300 dark:bg-gray-800 p-4 rounded-t-lg dark:text-white">
+          ALAMAT
+        </h5>
+        <div class="embed w-100">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d495.66765351988!2d106.99239!3d-6.349847!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e699371d5f64821%3A0x848eef6f28ec2256!2sWarung%20Gani!5e0!3m2!1sid!2sus!4v1705501320972!5m2!1sid!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div id="toast-bottom-left" class="animate-pulse border-gray-300 dark:border-gray-900 border-2 fixed flex items-center w-full max-w-xs p-4 space-x-4 text-gray-500 bg-white divide-x rtl:divide-x-reverse divide-gray-200 rounded-lg shadow bottom-5 left-[50vw] md:left-[80vw] dark:text-gray-400 dark:divide-gray-700 space-x dark:bg-gray-800" role="alert">
+    <a href="https://wa.me/625718251092" class="text-sm font-normal flex items-center gap-3"><img class="w-6 h-6" src="src/whatsapp-icon.svg" alt="whatapp icon"> Hubungi Kami</a>
+</div>
+  
+
+<footer class="bg-white dark:bg-gray-900">
+  <div class="mx-auto w-full max-w-screen-xl">
+    <div class="grid grid-cols-1 gap-8 px-4 py-6 lg:py-8 md:grid-cols-3">
+      <div>
+          <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Kontak</h2>
+          <ul class="text-gray-500 dark:text-gray-400 font-medium">
+              <li class="mb-4">
+                  <a href="https://wa.me/625718251092" class="p-3 border-green-300 border-2 rounded-lg hover:underline">WHATSAPP</a>
+              </li>
+              <li class="mb-4">
+                  <a href="#" class="p-3 hover:underline">+62 85718251092</a>
+              </li>
+              
+          </ul>
+      </div>
+      <div>
+          <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Alamat</h2>
+          <ul class="text-gray-500 dark:text-gray-400 font-medium">
+              <li class="mb-4">
+                  <a href="https://maps.app.goo.gl/xXbqdakjRkHDRLsx5" class="hover:underline p-3 border-green-300 border-2 rounded-lg">LIHAT RUTE</a>
+              </li>
+              <li class="mb-4">
+                <p>
+                  Warung Gani,JXXR+WRQ, RT.002/RW.005, Ciketing Udik, Kec. Bantar Gebang, Kota Bks, Jawa Barat 17153
+                </p>
+              </li>
+              
+          </ul>
+      </div>
+      <div>
+          <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Jam Buka</h2>
+          <ul class="text-gray-500 dark:text-gray-400 font-medium">
+              <li class="mb-4">
+                  <p class="hover:underline">Sen : 09:00 - 17:30</p>
+              </li>
+              <li class="mb-4">
+                  <p class="hover:underline">Sel : 09:00 - 17:30</p>
+              </li>
+              <li class="mb-4">
+                  <p class="hover:underline">Rab : 09:00 - 17:30</p>
+              </li>
+              <li class="mb-4">
+                  <p class="hover:underline">Kam : 09:00 - 17:30</p>
+              </li>
+              <li class="mb-4">
+                  <p class="hover:underline">Jum : 09:00 - 17:30</p>
+              </li>
+              
+          </ul>
+      </div>
+      
+  </div>
+  <div class="px-4 py-6 bg-gray-100 dark:bg-gray-700 md:flex md:items-center md:justify-between">
+      <span class="text-sm text-gray-500 dark:text-gray-300 sm:text-center">© 2024 <a href="https://ritsu.dheep.site/">Ritsu</a>. All Rights Reserved.
+      </span>
+      <div class="flex mt-4 sm:justify-center md:mt-0 space-x-5 rtl:space-x-reverse">
+      </div>
+    </div>
+  </div>
+</footer>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
   <script>
     // JavaScript function to scroll to a section with an offset
     document.addEventListener("DOMContentLoaded", function () {
       var navbar = document.querySelector("nav");
+      var brand = document.querySelector(".brand");
       var jumbotron = document.querySelector("#hero");
 
       window.addEventListener("scroll", function () {
@@ -177,11 +432,15 @@
           navbar.classList.remove("bg-white");
           navbar.classList.remove("dark:bg-gray-900");
           navbar.classList.add("bg-transparent");
+          brand.classList.add("text-white");
+          brand.classList.remove("text-black");
         } else {
           // Set navbar ke warna transparan penuh jika sudah melewati jumbotron
           navbar.classList.remove("bg-transparent");
           navbar.classList.add("bg-white");
           navbar.classList.add("dark:bg-gray-900");
+          brand.classList.remove("text-white");
+          brand.classList.add("text-black");
         }
       });
       const sections = document.querySelectorAll(".sections");
@@ -194,7 +453,6 @@
           // Check if the section is in the viewport
           if (sectionTop + 60 < window.innerHeight && sectionBottom >= -50) {
             section.classList.remove("opacity-0");
-          } else {
           }
         });
       }
