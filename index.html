@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="src/dheep-logo.jpg" type="image/jpg" />
+  <title>Ritsu</title>
+</head>
+
+<body class="dark:bg-[#0a0e17] bg-[#EAEAEA]">
+  <section title="navbar" id="navbar" class="transition-all duration-1000">
+    <nav class="bg-white border-gray-200 dark:bg-gray-900">
+      <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
+          <!-- <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Flowbite Logo" /> -->
+          <span class="self-center text-2xl font-bold whitespace-nowrap dark:text-white">RITSU</span>
+        </a>
+        <button data-collapse-toggle="navbar-default" type="button"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          aria-controls="navbar-default" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15" />
+          </svg>
+        </button>
+        <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+          <ul
+            class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+            <li>
+              <a href="#"
+                class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
+                aria-current="page">Home</a>
+            </li>
+            <li>
+              <a href="#"
+                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About</a>
+            </li>
+            <li>
+              <a href="#"
+                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Services</a>
+            </li>
+            <li>
+              <a href="#"
+                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Pricing</a>
+            </li>
+            <li>
+              <a href="#"
+                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </section>
+  <section id="hero" title="hero" class="transition-all duration-1000">
+    <section
+      class="bg-center bg-no-repeat bg-[url(src/bg-hero.jpg)] bg-cover w-100 overflow-hidden h-[100vh] flex flex-col justify-center items-center bg-gray-600 bg-blend-multiply">
+      <p class="absolute bottom-[10%] left-[50%] z-0 opacity-[10%]">
+        Image by
+        <a
+          href="https://www.freepik.com/free-vector/flat-design-abstract-illustration_22900052.htm#query=abstract%20background&position=42&from_view=search&track=ais&uuid=7275c7f6-cb55-46db-baa3-6fa6c833beec">Freepik</a>
+      </p>
+      <div class="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56">
+        <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">
+          Temukan Gaya Unik Anda dengan Ritsu.id
+        </h1>
+        <p class="mb-8 text-sm md:text-xl md:text-3xl font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">
+          Penuhi kebutuhan fashion Anda dengan koleksi eksklusif kami. Desain
+          baju kustom Anda sendiri dan nikmati pengalaman berbelanja online
+          yang tak tertandingi.
+        </p>
+        <div class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0">
+          <a href="https://wa.me/6285894800204?text=Halo%20saya%20ingin%20membuat%20website%20untuk%20toko%20saya"
+            target="_blank" rel="noopener noreferrer"
+            class="inline-flex justify-center items-center py-3 px-5 text-sm md:text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
+            Hubungi Kami
+            <svg class="w-3.5 h-3.5 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+              fill="none" viewBox="0 0 14 10">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M1 5h12m0 0L9 1m4 4L9 9" />
+            </svg>
+          </a>
+          <a onclick="scrollToSection('benefit')"
+            class="inline-flex justify-center hover:text-gray-900 items-center py-3 px-5 text-sm sm:ms-4 md:text-base font-medium text-center text-white rounded-lg border border-white hover:bg-gray-3 mt-200 focus:ring-4 focus:ring-gray-400">
+            Pelajari Selengkapnya
+          </a>
+        </div>
+      </div>
+    </section>
+  </section>
+  <section class="sections duration-1000 transition-all mt-26">
+    <div class="container mx-auto">
+      <a href="#" class="block w-[60%] p-16 mx-auto">
+        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+          RITSU
+        </h5>
+        <p class="font-normal text-gray-700 dark:text-gray-400 text-justify">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates quaerat facere eius beatae, dolore ea,
+          cupiditate possimus in consequuntur vitae culpa nam facilis dolor architecto fugiat. Minima, nisi deleniti
+          modi ab doloremque illum tenetur maxime, nam necessitatibus officiis amet voluptatibus veniam perspiciatis
+          aut, earum officia.
+        </p>
+      </a>
+    </div>
+  </section>
+  <section>
+    <div class="container mx-auto">
+      <h5 class="mb-2 text-2xl font-bold tracking-tight p-4 rounded-lg text-center bg-gray-900 dark:text-white">
+        GALERY
+      </h5>
+      <div class="wrapper w-full grid grid-cols-3 ">
+        <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+          <a href="#">
+            <img class="rounded-t-lg w-full" src="https://placehold.co/300" alt="" />
+          </a>
+          <div class="p-5">
+            <a href="#">
+              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology
+                acquisitions 2021</h5>
+            </a>
+          </div>
+        </div>
+        <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+          <a href="#">
+            <img class="rounded-t-lg w-full" src="https://placehold.co/300" alt="" />
+          </a>
+          <div class="p-5">
+            <a href="#">
+              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology
+                acquisitions 2021</h5>
+            </a>
+          </div>
+        </div>
+        <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+          <a href="#">
+            <img class="rounded-t-lg w-full" src="https://placehold.co/300" alt="" />
+          </a>
+          <div class="p-5">
+            <a href="#">
+              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology
+                acquisitions 2021</h5>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <footer class="bg-white rounded-lg bottom-0 shadow mt-24 dark:bg-gray-900 relative bottom-0">
+    <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+      <hr class="my-6 border-gray-400 sm:mx-auto dark:border-gray-700 lg:my-8" />
+      <span class="block text-sm text-gray-500 text-center dark:text-gray-400">© 2024
+        <a href="https://dheep.site/" class="hover:underline">dheep.site</a>.
+        All Rights Reserved.</span>
+    </div>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+  <script>
+    // JavaScript function to scroll to a section with an offset
+    document.addEventListener("DOMContentLoaded", function () {
+      var navbar = document.querySelector("nav");
+      var jumbotron = document.querySelector("#hero");
+
+      window.addEventListener("scroll", function () {
+        var scrollPosition = window.scrollY;
+        console.log("scroll pos : " + scrollPosition);
+        console.log("jumbo : " + jumbotron.clientHeight);
+        // Sesuaikan nilai offset dengan tinggi jumbotron
+        if (scrollPosition < jumbotron.clientHeight - 500) {
+          // Atur transparansi navbar menggunakan kelas-kelas Tailwind
+          var opacity = scrollPosition / jumbotron.clientHeight;
+          navbar.classList.remove("bg-white");
+          navbar.classList.remove("dark:bg-gray-900");
+          navbar.classList.add("bg-transparent");
+        } else {
+          // Set navbar ke warna transparan penuh jika sudah melewati jumbotron
+          navbar.classList.remove("bg-transparent");
+          navbar.classList.add("bg-white");
+          navbar.classList.add("dark:bg-gray-900");
+        }
+      });
+      const sections = document.querySelectorAll(".sections");
+
+      function checkIfInView() {
+        sections.forEach((section) => {
+          const sectionTop = section.getBoundingClientRect().top;
+          const sectionBottom = section.getBoundingClientRect().bottom;
+
+          // Check if the section is in the viewport
+          if (sectionTop + 60 < window.innerHeight && sectionBottom >= -50) {
+            section.classList.remove("opacity-0");
+          } else {
+          }
+        });
+      }
+
+      // Initial check when the page loads
+
+      // Check if sections are in view on scroll
+      checkIfInView();
+      window.addEventListener("scroll", checkIfInView);
+    });
+    function scrollToSection(sectionId) {
+      const section = document.getElementById(sectionId);
+
+      if (section) {
+        // Calculate the offset (adjust as needed)
+        const offset = 100;
+
+        // Scroll to the section with the offset
+        window.scrollTo({
+          top: section.offsetTop - offset,
+          behavior: "smooth",
+        });
+      }
+    }
+  </script>
+</body>
+
+</html>
