@@ -151,6 +151,53 @@
       </div>
     </div>
   </section>
+  
+  <section class="transition-all duration-1000 sections">
+    <div class="container mx-auto" id="galery">
+      <div class="galery w-[90%]  mx-auto flex flex-col gap-4">
+        <div class="title">
+          <h5 class="mb-2 text-2xl font-bold tracking-tight bg-gray-300 dark:bg-gray-800 p-4 rounded-t-lg dark:text-white">
+            GALERI
+          </h5>
+        </div>
+        <div class="images w-full">
+          <div
+            class="wrapper grid justify-items-stretch grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 rounded-lg gap-1 p-2 content-left self-center ">
+            <div class=" bg-white border border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700" style="aspect-ratio:1/1 ;overflow:hidden;">
+              <a href="#">
+                <img loading="lazy" class=" w-full" src="src/1.jpg" alt="" />
+              </a>
+            </div>
+            <div class=" bg-white border border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700" style="aspect-ratio:1/1 ;overflow:hidden;">
+              <a href="#">
+                <img loading="lazy" class=" w-full" src="src/2.jpeg" alt="" />
+              </a>
+            </div>
+            <div class=" bg-white border border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700" style="aspect-ratio:1/1 ;overflow:hidden;">
+              <a href="#">
+                <img loading="lazy" class=" w-full" src="src/3.jpeg" alt="" />
+              </a>
+            </div>
+            <div class=" bg-white border border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700" style="aspect-ratio:1/1 ;overflow:hidden;">
+              <a href="#">
+                <img loading="lazy" class=" w-full" src="src/4.jpeg" alt="" />
+              </a>
+            </div>
+            <div class=" bg-white border border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700" style="aspect-ratio:1/1 ;overflow:hidden;">
+              <a href="#">
+                <img loading="lazy" class=" w-full" src="src/5.jpeg" alt="" />
+              </a>
+            </div>
+            <div class=" bg-white border border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700" style="aspect-ratio:1/1 ;overflow:hidden;">
+              <a href="#">
+                <img loading="lazy" class=" w-full" src="src/6.jpeg" alt="" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
   <section class="my-24 bg-gray-300 dark:bg-gray-800 py-16 transition-all duration-1000 sections" id="review">
     <div class="container mx-auto">
       <div class="ratings">
@@ -289,52 +336,6 @@
       </div>
     </div>
   </section>
-  <section class="transition-all duration-1000 sections">
-    <div class="container mx-auto" id="galery">
-      <div class="galery w-[90%]  mx-auto flex flex-col gap-4">
-        <div class="title">
-          <h5 class="mb-2 text-2xl font-bold tracking-tight bg-gray-300 dark:bg-gray-800 p-4 rounded-t-lg dark:text-white">
-            GALERI
-          </h5>
-        </div>
-        <div class="images w-full">
-          <div
-            class="wrapper grid justify-items-stretch grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 rounded-lg gap-1 p-2 content-left self-center ">
-            <div class=" bg-white border border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700" style="aspect-ratio:1/1 ;overflow:hidden;">
-              <a href="#">
-                <img loading="lazy" class=" w-full" src="src/1.jpg" alt="" />
-              </a>
-            </div>
-            <div class=" bg-white border border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700" style="aspect-ratio:1/1 ;overflow:hidden;">
-              <a href="#">
-                <img loading="lazy" class=" w-full" src="src/2.jpeg" alt="" />
-              </a>
-            </div>
-            <div class=" bg-white border border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700" style="aspect-ratio:1/1 ;overflow:hidden;">
-              <a href="#">
-                <img loading="lazy" class=" w-full" src="src/3.jpeg" alt="" />
-              </a>
-            </div>
-            <div class=" bg-white border border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700" style="aspect-ratio:1/1 ;overflow:hidden;">
-              <a href="#">
-                <img loading="lazy" class=" w-full" src="src/4.jpeg" alt="" />
-              </a>
-            </div>
-            <div class=" bg-white border border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700" style="aspect-ratio:1/1 ;overflow:hidden;">
-              <a href="#">
-                <img loading="lazy" class=" w-full" src="src/5.jpeg" alt="" />
-              </a>
-            </div>
-            <div class=" bg-white border border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700" style="aspect-ratio:1/1 ;overflow:hidden;">
-              <a href="#">
-                <img loading="lazy" class=" w-full" src="src/6.jpeg" alt="" />
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
   <section class="my-16 transition-all duration-1000 sections" id="maps">
     <div class="container mx-auto">
       <div class="findus w-[90%] mx-auto">
@@ -414,70 +415,7 @@
 </footer>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
-  <script>
-    // JavaScript function to scroll to a section with an offset
-    document.addEventListener("DOMContentLoaded", function () {
-      var navbar = document.querySelector("nav");
-      var brand = document.querySelector(".brand");
-      var jumbotron = document.querySelector("#hero");
-
-      window.addEventListener("scroll", function () {
-        var scrollPosition = window.scrollY;
-        console.log("scroll pos : " + scrollPosition);
-        console.log("jumbo : " + jumbotron.clientHeight);
-        // Sesuaikan nilai offset dengan tinggi jumbotron
-        if (scrollPosition < jumbotron.clientHeight - 500) {
-          // Atur transparansi navbar menggunakan kelas-kelas Tailwind
-          var opacity = scrollPosition / jumbotron.clientHeight;
-          navbar.classList.remove("bg-white");
-          navbar.classList.remove("dark:bg-gray-900");
-          navbar.classList.add("bg-transparent");
-          brand.classList.add("text-white");
-          brand.classList.remove("text-black");
-        } else {
-          // Set navbar ke warna transparan penuh jika sudah melewati jumbotron
-          navbar.classList.remove("bg-transparent");
-          navbar.classList.add("bg-white");
-          navbar.classList.add("dark:bg-gray-900");
-          brand.classList.remove("text-white");
-          brand.classList.add("text-black");
-        }
-      });
-      const sections = document.querySelectorAll(".sections");
-
-      function checkIfInView() {
-        sections.forEach((section) => {
-          const sectionTop = section.getBoundingClientRect().top;
-          const sectionBottom = section.getBoundingClientRect().bottom;
-
-          // Check if the section is in the viewport
-          if (sectionTop + 60 < window.innerHeight && sectionBottom >= -50) {
-            section.classList.remove("opacity-0");
-          }
-        });
-      }
-
-      // Initial check when the page loads
-
-      // Check if sections are in view on scroll
-      checkIfInView();
-      window.addEventListener("scroll", checkIfInView);
-    });
-    function scrollToSection(sectionId) {
-      const section = document.getElementById(sectionId);
-
-      if (section) {
-        // Calculate the offset (adjust as needed)
-        const offset = 100;
-
-        // Scroll to the section with the offset
-        window.scrollTo({
-          top: section.offsetTop - offset,
-          behavior: "smooth",
-        });
-      }
-    }
-  </script>
+  <script src="src/script.js"></script>
 </body>
 
 </html>
